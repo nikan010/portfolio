@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("img/contact.gif");
+            background-attachment: fixed; /* Hiermee wordt de achtergrondafbeelding vastgezet */
+            text-align: center;
+            background-repeat: no-repeat;
+            color: white;
+            background-size: cover;
+            justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <a href="https://www.techniekcollegerotterdam.nl/"></a>
+            <ul class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="kennis.html">kennis en vaardigheden</a>
+                <a href="projecten.html">voorbeeld van projecten</a>
+               <a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+      
+    </header>
+    <main class="content2">
+      <h3>Revieuw over mijn portfolio, Vul hieronder uw informatie in.</h3><br>
+      <form id="reviewForm" class="container" action="Dankje.html" method="POST">
+        <fieldset>
+          <legend>Persoonlijke informatie:</legend>
+          <div class="input-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-container">
+            <label for="firstname">Voornaam:</label>
+            <input type="text" id="firstname" name="firstname" required>
+          </div>
+          <div class="input-container">
+            <label for="lastname">Achternaam:</label>
+            <input type="text" id="lastname" name="lastname" required>
+          </div>
+          <div class="input-container">
+            <label for="gender">Geslacht:</label>
+            <select id="gender" name="gender" required>
+              <option value="man">Man</option>
+              <option value="vrouw">Vrouw</option>
+              <option value="vrouw">panda</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="city">Stad:</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          <div class="input-container">
+            <label for="country">Uit welk land komt u:</label>
+            <input type="text" id="country" name="country" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Feedback:</legend>
+          <div class="input-container">
+            <label for="feedback">Wat is uw mening over deze site?</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+          </div>
+        </fieldset>
+        <p>Door deze informatie in te vullen, bent u het eens met onze <a href="Terms_Privacy.html" style="color: dodgerblue">Terms & Privacy</a>.</p>
+        <a class="project" href="dankje.html" target="_blank">laat uw revieuw achter</a>
+      </form>
+    </main>
+  </body>
+</html>

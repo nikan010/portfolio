@@ -1,0 +1,144 @@
+// Define a namespace for fonts
+$fonts: ('Lato-Bold', 'fonts/Lato-Bold.ttf');
+
+// Define a mixin for setting font-face
+@mixin font-face($font-family, $font-path) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-path);
+  }
+}
+
+// Define a mixin for setting font-family
+@mixin font-family($font-family) {
+  font-family: $font-family, Arial, sans-serif;
+}
+
+// Define a mixin for setting background
+@mixin background($color) {
+  background-color: $color;
+}
+
+// Define a mixin for setting margin
+@mixin margin($value) {
+  margin: $value;
+}
+
+// Define a mixin for setting padding
+@mixin padding($value) {
+  padding: $value;
+}
+
+// Define a mixin for setting border-radius
+@mixin border-radius($value) {
+  border-radius: $value;
+}
+
+// Define a mixin for setting transition
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}
+
+// Define a mixin for setting hover effect
+@mixin hover($property, $value) {
+  &:hover {
+    $property: $value;
+  }
+}
+
+// Define a mixin for setting active effect
+@mixin active($property, $value) {
+  &:active {
+    $property: $value;
+  }
+}
+
+// Define a mixin for setting focus effect
+@mixin focus($property, $value) {
+  &:focus {
+    $property: $value;
+  }
+}
+
+// Define a mixin for setting disabled effect
+@mixin disabled($property, $value) {
+  &:disabled {
+    $property: $value;
+  }
+}
+
+// Define a mixin for setting visibility
+@mixin visibility($value) {
+  visibility: $value;
+}
+
+// Define a mixin for setting display
+@mixin display($value) {
+  display: $value;
+}
+
+// Define a mixin for setting flex
+@mixin flex($value) {
+  display: flex;
+  flex: $value;
+}
+
+// Define a mixin for setting justify-content
+@mixin justify-content($value) {
+  justify-content: $value;
+}
+
+// Define a mixin for setting align-items
+@mixin align-items($value) {
+  align-items: $value;
+}
+
+// Define a mixin for setting position
+@mixin position($value) {
+  position: $value;
+}
+
+// Define a mixin for setting top
+@mixin top($value) {
+  top: $value;
+}
+
+// Define a mixin for setting right
+@mixin right($value) {
+  right: $value;
+}
+
+// Define a mixin for setting bottom
+@mixin bottom($value) {
+  bottom: $value;
+}
+
+// Define a mixin for setting left
+@mixin left($value) {
+  left: $value;
+}
+
+// Define a mixin for setting width
+@mixin width($value) {
+  width: $value;
+}
+
+// Define a mixin for setting height
+@mixin height($value) {
+  height: $value;
+}
+
+// Define a mixin for setting min-width
+@mixin min-width($value) {
+  min-width: $value;
+}
+
+// Define a mixin for setting min-height
+@mixin min-height($value) {
+  min-height: $value;
+}
+
+// Define a mixin for setting max-width
+@mixin max-width($value) {
+  max-width: $value;
+}
