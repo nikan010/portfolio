@@ -1,0 +1,155 @@
+
+.intro {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: Lato-Bold;
+    display: none;
+  }
+
+  .foto {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    display: none;
+    
+  }
+.hobby {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: Lato-Bold;
+    display: none;
+}
+.button-menu h1 {
+    text-align: center; 
+    margin: 0;          
+    padding: 10px;      
+}
+.button-menu {
+    border: 5px solid #000; 
+    padding: 10px;        
+    margin-top: 70px;      
+    margin-left: 70px;      
+    width: 200px;          
+    background-color: rgb(182, 98, 98);
+    position: absolute;    
+    top: 60px;             
+    left: 0;       
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;      
+    color: #000;
+}
+
+
+ button {
+    display: block;
+flex-wrap: wrap;
+background-color: rgba(158, 15, 15, 0.5);
+border: solid #000;
+ }
+  @font-face {
+    font-family: Lato-Bold;
+    src: url('fonts/Lato-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/HDBackground.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    width: 100%;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.navbar a {
+    color: white;
+    text-decoration: solid;
+    margin-right: 15px;
+    font-family: Lato-Bold;
+    font-size: 20px;
+}   
+
+.pipi {
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    height: 50px;  
+}
+
+
+
+.content {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding-right: 15px;
+    cursor: pointer;
+    font-family: Lato-Bold;
+    font-size: 20px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #AA0000;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

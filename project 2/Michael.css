@@ -1,0 +1,166 @@
+A:link {color: white ; text-decoration: none}
+A:active {color: black ; text-decoration: none}
+A:visited {color: white ; text-decoration: none}
+A:hover {color: red; text-decoration: none}
+.h1-bg {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+  }
+  ul#some_shit {
+    color: white;
+    list-style-type: none;
+  }
+  #some_shit h2, #some_shit h3, #some_shit h4, #some_shit h5, #some_shit h6 {
+    margin: 0;
+  }
+  @font-face {
+    font-family: Lato-Bold;
+    src: url('fonts/Lato-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/HDBackground.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    width: 100%;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.navbar a {
+    color: white;
+    text-decoration: solid;
+    margin-right: 15px;
+    font-family: Lato-Bold;
+    font-size: 20px;
+}   
+
+.pipi {
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    height: 50px;  
+}
+
+
+
+.content {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding-right: 15px;
+    cursor: pointer;
+    font-family: Lato-Bold;
+    font-size: 20px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #AA0000;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.h1-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 5px;
+}
+h1, h2, h3, p, ul {
+
+    text-align: center; 
+  }
+  p {
+    color: white;
+    padding:0px; 
+    margin:0px;
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid darkred;
+  }
+  .hidden {
+    display: none;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: red; /* Rode button = Voor videos */
+}
+.button2 {
+    background-color: #D2042D; /* Donker rode button = Voor fotos */
+}
+#Kika p {
+    color:white;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <LINK rel=stylesheet type="text/css" href="style.css">
+    <title>Reviews</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <ul id="links">
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Wie_zijn_wij.html">Over ons</a></li>
+        <li><a href="Locatie_gids.html">Locatie gids</a></li>
+        <!-- Dropdown voor TCR -->
+        <li class="dropdown">
+            <a href="TCR.html">TCR</a>
+            <ul class="dropdown-content">
+                <li><a href="bsa.html">BSA</a></li>
+                <li><a href="examenplan.html">Examenplan</a></li>
+                         </ul>
+        </li>
+        <li><a href="Canvas.html">Canvas</a></li>
+        <li><a href="Eduarte.html">Eduarte</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+    </ul>
+    <h1>Reviews ouderavond TCR</h1>
+        
+    <form id="reviewForm" class="container" action="Dankje.html" method="POST">
+      <h1>Vul hieronder uw informatie in.</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Voer het hier in." name="email" required>
+      <br>
+      <label for="voornaam"><b>Voornaam</b></label>
+      <input type="text" placeholder="Voer het hier in." name="voornaam" required oninput="this.value = this.value.replace(/[^A-Za-z]/g, '')">
+      
+      <label for="achternaam"><b>Achternaam</b></label>
+      <input type="text" placeholder="Voer het hier in." name="achternaam" required oninput="this.value = this.value.replace(/[^A-Za-z]/g, '')">
+      
+      <label for="gender"><b>Geslacht</b></label>
+      <select id="gender" name="gender">
+          <option value="man">Man</option>
+          <option value="vrouw">Vrouw</option>
+      </select>
+      <label for="stad"><b>Stad</b></label>
+      <input type="text" placeholder="Voer het hier in." name="stad" required>
+      
+      <label for="uname"><b>Uit welk land komt u</b></label>
+      <input type="text" placeholder="Voer het hier in." name="uname" required>
+  
+      <label for="mening"><b>Wat is uw mening over deze site?</b></label>
+      <input type="text" placeholder="Voer het hier in." name="mening" required>
+      
+      <p>Door deze informatie in te vullen, bent u het eens met onze <a href="Terms_Privacy.html" style="color: dodgerblue">Terms & Privacy</a>.</p>
+      <div class="clearfix">
+          <button type="submit" class="reviews">Laat uw review achter!</button>
+      </div>
+  </form>
+</body>
+</html>

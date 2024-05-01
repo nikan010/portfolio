@@ -1,0 +1,177 @@
+BODY {background-color: #004630; font-family: Arial, Helvetica, sans-serif;}
+A:link {color: white ; text-decoration: none}
+A:active {color: black ; text-decoration: none}
+A:visited {color: white ; text-decoration: none}
+A:hover {color: #d9fd49; text-decoration: none}
+
+div.absolute {
+  position: absolute;
+  width: 50%;
+  bottom: 10px;
+} 
+
+ul#links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: show;
+  height: 50px;
+  background-color: #006445;
+  width: 100%;
+}
+#foto_introductie{
+  float: center;
+  margin: 15px;
+}
+#p_locatie{
+  float: left;
+  margin: 15px;
+}
+
+ul#links li {
+  float: left;
+}
+
+#idk_bro {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+}
+
+ul#links li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+ul#links li a:hover {
+  background-color: none;
+  color: #d9fd49;
+}
+
+ul#some_shit {
+  color: white;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, p, ul {
+  color: white;
+  text-align: center; 
+}
+
+p {
+  color: white;
+  padding:0px; 
+  margin:0px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    background-color: #006445;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+.container {
+    background-color: #004630;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+button.reviews {
+    background-color: #006445;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.reviews:hover {
+    background-color: #004630;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-with-text {
+  text-align: center;
+}
+
+.image-with-text img {
+  height: auto;
+  width: 300px;
+}
+
+.image-with-text p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+#some_shit h2, #some_shit h3, #some_shit h4, #some_shit h5, #some_shit h6 {
+  margin: 0;
+}
+.h1-bg {
+  background-color: #006445;
+  padding: 5px;
+  margin: 5px;
+}
+.eduarte-app {
+  text-align: center;
+  margin: 5px;
+  padding: 0px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #004630;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#examenplanh3 {
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
