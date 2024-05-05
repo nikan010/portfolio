@@ -1,32 +1,13 @@
 
 .h1-bg {
+    /* Stijl voor de achtergrondkleur, tekstkleur, padding en marges van h1-elementen */
     color: white;
     padding: 5px;
     margin: 5px;
-  }
-  ul#some_shit {
-    color: white;
-    list-style-type: none;
-  }
-  #some_shit h2, #some_shit h3, #some_shit h4, #some_shit h5, #some_shit h6 {
-    margin: 0;
-  }
-  @font-face {
-    font-family: Lato-Bold;
-    src: url('fonts/Lato-Bold.ttf');
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('img/HDBackground.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-}
 .gamemodecontainer {
+    /* Stijl voor de container van de gamemodi */
     border: 5px solid #000; 
     padding: 10px;        
     margin-top: 70px;      
@@ -42,7 +23,8 @@ body {
     color: #000;    
 }
 
-.leveldecontainer {
+.levelcontainer {
+    /* Stijl voor de container van de levels */
     border: 5px solid #000; 
     padding: 10px;        
     margin-top: 70px;      
@@ -51,64 +33,45 @@ body {
     background-color: rgb(182, 98, 98);
     position: absolute;     
     top: 60px;             
-    left: 1000px;  /* Aangepast om naast de eerste container te plaatsen */     
+    left: 0;       
     display: flex;
     flex-wrap: wrap;
     justify-content: center;      
-    color: #000;
+    color: #000;    
 }
 
-
-
+#knopje {
+    /* Stijl voor de knop */
+    border-radius: 15px;
+    padding: 10px; 
+}
 
 .navbar {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 15px;
+    /* Stijl voor de navigatiebalk */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
-    
     width: 100%;
     box-sizing: border-box;
-    
-    
-    
 }
 
-.navbar a {
-    color: white;
-    text-decoration: solid;
-    margin-right: 15px;
-    font-family: Lato-Bold;
-    font-size: 20px;
-}   
-
 .pipi {
+    /* Stijl voor het logo */
     display: flex;
     justify-content: left;
     width: 100px;
     height: 50px;  
 }
 
-
-
-.content {
-    flex: 1;
-    text-align: center;
-    padding: 50px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 400px;
-    height: auto;
-    margin: auto;
-    margin-top: 10%;
-    
-}
 .dropdown {
+    /* Stijl voor de dropdown */
     display: inline-block;
 }
 
 .dropbtn {
+    /* Stijl voor de dropdown-knop */
     color: white;
     text-decoration: none;
     background-color: transparent;
@@ -117,10 +80,10 @@ body {
     cursor: pointer;
     font-family: Lato-Bold;
     font-size: 20px;
-
 }
 
 .dropdown-content {
+    /* Stijl voor de inhoud van de dropdown */
     display: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -130,32 +93,39 @@ body {
 }
 
 .dropdown-content a {
+    /* Stijl voor de links in de dropdown */
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-size: 15px;
-    
 }
 
 .dropdown-content a:hover {
+    /* Stijl voor de hover-effecten op de links in de dropdown */
     background-color: #AA0000;
     color: white;
 }
 
 .dropdown:hover .dropdown-content {
+    /* Stijl voor het weergeven van de dropdown-inhoud bij hover */
     display: block;
 }
+
 #foto {
+    /* Stijl voor de afbeeldingen en video's */
     display: none;
     color: white;
 }
+
 .page {
+    /* Stijl voor de paginainhoud */
     text-align: center;
     color: white;
-
 }
+
 .button-container {
+    /* Stijl voor de container van de knoppen */
     border: 5px solid black;
     background-color: rgb(182, 98, 98);
     padding: 10px;
@@ -166,47 +136,24 @@ body {
 }
 
 button {
+    /* Stijl voor de knoppen */
+    border-radius: 15px;
     border: 2px solid palevioletred;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    text-decoration: none; /* Verwijder onderstreping van de links */
+    text-decoration: none; 
     color: #000; 
 }
+
 button a {
-    color: #000; /* Behoud de oorspronkelijke tekstkleur voor de linktekst */
+    /* Stijl voor de links binnen de knoppen */
+    color: #000; 
     text-decoration: none;
 }
 
 button:hover {
-    background-color: palevioletred; /* Voeg een achtergrondkleur toe wanneer de knop wordt gehoverd */
-    color: #fff; /* Tekstkleur wijzigen wanneer gehoverd */
+    /* Stijl voor de hover-effecten op de knoppen */
+    background-color: palevioletred; 
+    color: #fff; 
 }
-#gameContainer{
-    text-align: center;
-   
-}
-#gameBoard{
-    border: 3px solid;
-    color: red;
-    
-}
-#scoreText{
-    font-family: "Permanent Marker", cursive;
-    font-size: 50px;
-}
-#resetBtn{
-    font-family: "Permanent Marker", cursive;
-    font-size: 22px;
-    width: 100px;
-    height: 50px;
-    border: 4px solid;
-    border-radius: 15px;
-    cursor: pointer;
-}
-.log {
-    border: 5px solid;
-    border-radius: 30px;
-    width: 150px;
-    
-    }
