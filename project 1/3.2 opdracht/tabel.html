@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>boek uw vakantie bij TUI</h1>
+        
+        <form action="/action_page.php" style="border:1px solid #ccc">
+          <di class="container">
+            
+            <h1>vul hieronder je informatie in</h1>
+            <hr>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Voer het hier in." name="email" required>
+            <br>
+            <label for="voornaam"><b>Voornaam</b></label>
+            <input type="text" placeholder="Voer het hier in." name="voornaam" required oninput="this.value = this.value.replace(/[^A-Za-z]/g, '')">                       
+            <label for="achternaam"><b>Achternaam</b></label>
+            <input type="text" placeholder="Voer het hier in." name="achternaam" required oninput="this.value = this.value.replace(/[^A-Za-z]/g, '')">
+            <br>
+            <label for="gender"><b>Geslacht</b></label>
+            <select id="gender" name="gender">
+              <option value="man">Man</option>
+              <option value="vrouw">Vrouw</option>
+            </select>
+            <br>
+            <label for="postcode"><b>Postcode</b></label>
+            <input type="text" placeholder="Voer het hier in." name="postcode" required>
+            <label for="stad"><b>Stad</b></label>
+            <input type="text" placeholder="Voer het hier in." name="stad" required>
+            <label for="straathuisnummer"><b>Straat en Huisnummer</b></label>
+            <input type="text" placeholder="Voer het hier in." name="straathuisnummer" required>
+            <br> 
+            <label for="ccnum"><b>BSN Nummer</b></label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="147392324" maxlength="9">
+            <br>
+            <label for="uname"><b>Uit welk land komt u</b></label>
+            <input type="text" placeholder="Voer het hier in." name="uname" required>
+            <br>
+            <label for="country"><b>Welk land wil u naar toe</b></label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <br>
+            <label for="departureDate"><b>Wanneer wil u weg</b></label>
+            <input type="date" placeholder="mm-dd-yy" name="departureDate" required min="2023-09-15" required>            
+            <br>
+            <label for="returnDate"><b>Wanneer wil u terug</b></label>
+            <input type="date" name="returnDate" required min="2023-09-15" required>                       
+            <br>
+            <label for="country"><b>Met hoeveel mensen gaat u</b></label>
+            <select id="country" name="country">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Voer het hier in." name="psw" required>
+        <input type="submit" value="Login">
+      </div>
+            
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">boek nu</button>
+              </div>
+        
+          </div>
+        </form>
+
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+body
+{
+background-color: #CCCCCC;
+}
+
+#tekst1
+{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:red;
+}
