@@ -3,13 +3,13 @@
   src: url("fonts/Lato-Bold.ttf");
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-image: url("img/background.jpg");
+  background-attachment: fixed; /* Hiermee wordt de achtergrondafbeelding vastgezet */
+  text-align: center;
+  background-repeat: no-repeat;
   color: white;
+  background-size: cover;
+  justify-content: center;
 }
 
 .footer {
@@ -30,13 +30,15 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   box-sizing: border-box;
+  position: fixed; /* Make the navbar fixed to the top */
+  top: 0; /* Align it to the top */
 }
+
 .navbar a {
   color: white;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: none; /* changed from solid to none */
   margin-right: 15px;
-  font-family: Lato-Bold;
+  font-family: "Lato-Bold";
   font-size: 20px;
 }
 
