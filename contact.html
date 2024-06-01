@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="nl">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page - Yvan van Dijk</title>
@@ -8,65 +8,70 @@
     <meta name="keywords" content="Yvan van Dijk contact, projecten, HTML, CSS, JavaScript, PHP, GitHub, webontwikkeling">
     <meta name="author" content="Yvan van Dijk">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Header with navigation bar -->
     <header>
         <nav class="navbar">
-            <a href="https://www.techniekcollegerotterdam.nl/"></a>
+            <a href="https://www.techniekcollegerotterdam.nl/">Techniek College Rotterdam</a>
             <ul class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="kennis.html">kennis en vaardigheden</a>
-                <a href="projecten.html">voorbeeld van projecten</a>
-               <a href="contact.html">Contact</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kennis.html">Kennis en Vaardigheden</a></li>
+                <li><a href="projecten.html">Voorbeeld van Projecten</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-      
     </header>
+    
+    <!-- Main content area -->
     <main class="content2">
-      <h3>Revieuw over mijn portfolio, Vul hieronder uw informatie in.</h3><br>
-      <form id="reviewForm" class="container" action="Dankje.html" method="POST">
-        <fieldset>
-          <legend>Persoonlijke informatie:</legend>
-          <div class="input-container">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="input-container">
-            <label for="firstname">Voornaam:</label>
-            <input type="text" id="firstname" name="firstname" required>
-          </div>
-          <div class="input-container">
-            <label for="lastname">Achternaam:</label>
-            <input type="text" id="lastname" name="lastname" required>
-          </div>
-          <div class="input-container">
-            <label for="gender">Geslacht:</label>
-            <select id="gender" name="gender" required>
-              <option value="man">Man</option>
-              <option value="vrouw">Vrouw</option>
-              <option value="vrouw">panda</option>
-            </select>
-          </div>
-          <div class="input-container">
-            <label for="city">Stad:</label>
-            <input type="text" id="city" name="city" required>
-          </div>
-          <div class="input-container">
-            <label for="country">Uit welk land komt u:</label>
-            <input type="text" id="country" name="country" required>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Feedback:</legend>
-          <div class="input-container">
-            <label for="feedback">Wat is uw mening over deze site?</label>
-            <textarea id="feedback" name="feedback" required></textarea>
-          </div>
-        </fieldset>
-        <p>Door deze informatie in te vullen, bent u het eens met onze <a href="Terms_Privacy.html" style="color: dodgerblue">Terms & Privacy</a>.</p>
-        <a class="project" href="dankje.html" target="_blank">laat uw revieuw achter</a>
-      </form>
+        <h3>Review over mijn portfolio, Vul hieronder uw informatie in.</h3><br>
+        <form id="reviewForm" class="container" action="Dankje.html" method="POST">
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Persoonlijke informatie:</legend>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="firstname">Voornaam:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="input-container">
+                    <label for="lastname">Achternaam:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="input-container">
+                    <label for="gender">Geslacht:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="man">Man</option>
+                        <option value="vrouw">Vrouw</option>
+                        <option value="panda">Panda</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="city">Stad:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="input-container">
+                    <label for="country">Uit welk land komt u:</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+            </fieldset>
+            
+            <!-- Feedback Fieldset -->
+            <fieldset>
+                <legend>Feedback:</legend>
+                <div class="input-container">
+                    <label for="feedback">Wat is uw mening over deze site?</label>
+                    <textarea id="feedback" name="feedback" required></textarea>
+                </div>
+            </fieldset>
+            
+            <p>Door deze informatie in te vullen, bent u het eens met onze <a href="Terms_Privacy.html" style="color: dodgerblue">Terms & Privacy</a>.</p>
+            <a class="project" href="dankje.html" target="_blank">Laat uw review achter</a>
+        </form>
     </main>
-  </body>
+</body>
 </html>

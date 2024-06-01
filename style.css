@@ -30,8 +30,26 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   box-sizing: border-box;
-  position: fixed; /* Make the navbar fixed to the top */
-  top: 0; /* Align it to the top */
+  position: fixed; /* Make the navbar static so it scrolls with the page */
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style-type: none; /* Verwijder de standaard puntjes */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Zorg ervoor dat de links horizontaal naast elkaar staan */
+}
+
+.nav-links li {
+  margin-right: 20px; /* Voeg ruimte tussen de links toe */
+}
+
+.nav-links a {
+  text-decoration: none; /* Verwijder onderstreping van de links */
+  color: #000; /* Stel de kleur van de links in */
+  /* Voeg hier eventueel andere stijlen voor je links toe */
 }
 
 .navbar a {
@@ -58,7 +76,8 @@ body {
   width: 400px;
   height: auto;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 50px; /* Adjust the margin-top if needed */
+  padding-top: 50px;
 }
 
 .content2 {
@@ -148,4 +167,35 @@ footer a:hover {
 .input-container select,
 .input-container textarea {
   margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    width: 100%;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .nav-links a {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+  .content ul {
+    padding-left: 0;
+  }
+  .content ul li {
+    margin-bottom: 20px;
+  }
+  .content a.project {
+    display: block;
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
