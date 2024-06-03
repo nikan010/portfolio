@@ -238,6 +238,10 @@ body {
   margin: auto;
   @include margin-top(50px); /* Adjust the margin-top if needed */
   @include padding-top(50px);
+
+  a {
+    color: black;
+  }
 }
 
 .content2 {
@@ -385,7 +389,4 @@ footer {
     @include display(block);
     @include margin-top(5px);
   }
-}
-.mail{
-  color: white;
 }

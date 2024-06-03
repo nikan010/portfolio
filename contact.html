@@ -31,8 +31,11 @@
             <fieldset>
                 <legend>Persoonlijke informatie:</legend>
                 <div class="input-container">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="gender">Geslacht:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="man">Man</option>
+                        <option value="vrouw">Vrouw</option>
+                    </select>
                 </div>
                 <div class="input-container">
                     <label for="firstname">Voornaam:</label>
@@ -43,20 +46,16 @@
                     <input type="text" id="lastname" name="lastname" required>
                 </div>
                 <div class="input-container">
-                    <label for="gender">Geslacht:</label>
-                    <select id="gender" name="gender" required>
-                        <option value="man">Man</option>
-                        <option value="vrouw">Vrouw</option>
-                        <option value="panda">Panda</option>
-                    </select>
-                </div>
-                <div class="input-container">
                     <label for="city">Stad:</label>
                     <input type="text" id="city" name="city" required>
                 </div>
                 <div class="input-container">
-                    <label for="country">Uit welk land komt u:</label>
+                    <label for="country">Nationaliteit:</label>
                     <input type="text" id="country" name="country" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
             </fieldset>
             
